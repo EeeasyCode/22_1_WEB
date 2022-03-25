@@ -4,5 +4,283 @@
     <meta charset="UTF-8" />
     <title>실습 3-7</title>
   </head>
-  <body></body>
+  <style>
+    /* border-collapse로 테두리가 2개면 1개로 합쳐줌 */
+    table {
+      border-collapse: collapse;
+    }
+    table td,
+    th {
+      width: 100px;
+      height: 12.5px;
+      text-align: center;
+    }
+    table td {
+      border-right: 1px solid;
+    }
+  </style>
+  <!-- 15분 단위로 한시간을 4칸으로 테이블 쪼개서
+빈칸을 만들기 위해 각각의 테이블의 보더속성을 넣는대신
+보더를 빼고, 각각의 시간대의 tr에 보더를 넣어줬음
+td는 전역으로 세로줄을 생성하게 보더값을 넣어줬음 -->
+  <body>
+    <table>
+      <!-- 헤더 -->
+      <caption>
+        <h2>이창민의 2022년 1학기 시간표</h2>
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+        </tr>
+      </thead>
+      <!-- 바디 -->
+      <tbody>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">9</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td rowspan="11" style="background-color: pink">
+            웹프로그래밍
+            <br />
+            <small> AI공학관-411 </small>
+          </td>
+          <td></td>
+          <td rowspan="5" style="background-color: aquamarine">C++</td>
+          <td rowspan="5" style="background-color: aquamarine">C++</td>
+          <td rowspan="11" style="background-color: orange">확률과 통계</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">11</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">12</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">1</td>
+          <td></td>
+          <td></td>
+          <td rowspan="11" style="background-color: cadetblue">리눅스</td>
+          <td rowspan="8" style="background-color: skyblue">
+            독일문화의 이해 (제2영역)
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td rowspan="11" style="background-color: #fe9">자료구조</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-top: 1px solid">
+          <td style="width: 30px; text-align: end">5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="border-bottom: 1px solid">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
