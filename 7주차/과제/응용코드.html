@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 20px;
+      }
+      #T:active {
+        background-color: blue;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      /* absolute와 relative 구분하기 (상대, 절대 좌표) */
+      #H:hover {
+        background-color: green;
+        position: relative;
+        left: 40px;
+        top: 40px;
+      }
+      #K:hover {
+        background-color: green;
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="T">T</div>
+    <div id="H">h</div>
+    <div id="A">a</div>
+    <div id="N">n</div>
+    <div id="K">k</div>
+    <div id="S">s</div>
+  </body>
+</html>
