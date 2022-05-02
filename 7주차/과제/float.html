@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 1080px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        overflow: hidden;
+      }
+
+      #gnb {
+        float: left;
+        padding: 8px 0 8px 0;
+        background-color: green;
+      }
+      ul:first-child > li {
+        list-style-type: none;
+        float: left;
+        padding-left: 16px;
+      }
+      ul:first-child > li:first-child {
+        padding-left: 0px;
+      }
+      #rank {
+        float: right;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 0;
+        background-color: yellow;
+      }
+      ul:last-child > li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <ul id="gnb">
+        <li>메일</li>
+        <li>카페</li>
+        <li>블로그</li>
+        <li>쇼핑</li>
+        <li>사전</li>
+        <li>뉴스</li>
+        <li>증권</li>
+        <li>부동산</li>
+        <li>지도</li>
+      </ul>
+      <ul id="rank">
+        <li>실시간 검색 순위</li>
+      </ul>
+    </div>
+  </body>
+</html>

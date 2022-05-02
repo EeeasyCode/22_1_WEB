@@ -6,18 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body > div {
+        width: 400px;
+        height: 150px;
+        border: 3px solid black;
+        position: relative;
+        overflow: scroll;
+      }
       .box {
         width: 100px;
         height: 100px;
+        position: absolute;
+      }
+      .box:nth-child(1) {
         background-color: red;
-        margin: 10px;
-        padding: 10px;
-        float: left;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+      }
+      .box:nth-child(2) {
+        background-color: blue;
+        top: 50px;
+        left: 50px;
+        z-index: 10;
+      }
+      .box:nth-child(3) {
+        background-color: green;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
       }
     </style>
   </head>
   <body>
-    <div class="box">1</div>
-    <div class="box">2</div>
+    <h1>asdlkfmnasdlkfnslkd</h1>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <h2>asdfnklasdnlfkn</h2>
   </body>
 </html>
