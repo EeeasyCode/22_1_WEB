@@ -21,15 +21,21 @@ body {
 #page-wrapper {
   background-color: white;
   border-radius: 5px;
-  margin: 40px 0;
-  padding: 10px 20px;
+  margin: 0;
+  padding: 0 20px;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }
 
 /* header */
 #main-header {
+  width: 100%;
+  position: sticky;
+  background-color: white;
+  top:0;
   padding: 40px 50px;
+  box-sizing: border-box;
 }
+
 .master-title {
   font-size: 30px;
   color: black;
@@ -41,6 +47,10 @@ body {
 }
 
 #main-navigation {
+  top: 134px;
+  background-color: white;
+  position: sticky;
+  width: 100%;
   overflow: hidden;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -138,18 +148,19 @@ body {
 }
 
 #main-section {
-  float: left;
+  float: right;
   width: 710px;
 }
 
 #main-aside {
-  float: right;
+  float: left;
+  position: fixed;
   width: 200px;
 }
 
 /* artcile */
 article {
-  padding: 0 10px 20px 10px;
+  padding: 175px 10px 20px 10px;
   border-bottom: 1px solid #c8c8c8;
 }
 
