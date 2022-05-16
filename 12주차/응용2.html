@@ -7,28 +7,19 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(() => {
-        var text = $("h1").text();
-        var html = $("h1").html();
-
-        alert("text: " + text);
-        alert("html: " + html);
-
-        if (html == "빨강") {
-          $("div")
-            .css({
-              width: 50,
-              height: 50,
-              backgroundColor: "red",
-            })
-            .html("빨강");
-        }
+        $("h1").css("color", "blue");
+        $("h1").css("background", "aqua");
+        $("p").css("color", "green");
+        $("p").css("background", "yellow");
+        $("p").css("width", "200px");
       });
     </script>
     <title>Document</title>
   </head>
   <body>
-    <h1>빨강</h1>
-    <h1>Header - 1</h1>
-    <div></div>
+    <h1>jquery_select</h1>
+    <h1>jquery_select</h1>
+    <h1>jquery_select</h1>
+    <p>응용 2 - 글자색을 green으로 너비를 200px로 백그라운드를 노란색으로</p>
   </body>
 </html>

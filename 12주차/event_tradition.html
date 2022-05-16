@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function divClick() {
-        alert("hello world");
-      }
+      window.onload = () => {
+        var button = document.getElementById("button");
+        button.onclick = () => {
+          alert("click");
+        };
+      };
     </script>
   </head>
   <body>
-    <div onclick="divClick()">hello world!</div>
+    <button id="button">버튼</button>
   </body>
 </html>

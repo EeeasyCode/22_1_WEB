@@ -7,28 +7,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(() => {
-        var text = $("h1").text();
-        var html = $("h1").html();
-
-        alert("text: " + text);
-        alert("html: " + html);
-
-        if (html == "빨강") {
-          $("div")
-            .css({
-              width: 50,
-              height: 50,
-              backgroundColor: "red",
-            })
-            .html("빨강");
-        }
+        $("img").attr("alt", "jQuery 라이브러를 사용한 속성 지정");
+        $("img").attr("src", "https://via.placeholder.com/100x100");
+        $("img").attr("width", "100");
       });
     </script>
     <title>Document</title>
   </head>
   <body>
-    <h1>빨강</h1>
-    <h1>Header - 1</h1>
-    <div></div>
+    <img />
+    <img />
+    <img />
   </body>
 </html>

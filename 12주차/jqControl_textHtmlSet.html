@@ -7,28 +7,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(() => {
-        var text = $("h1").text();
-        var html = $("h1").html();
-
-        alert("text: " + text);
-        alert("html: " + html);
-
-        if (html == "빨강") {
-          $("div")
-            .css({
-              width: 50,
-              height: 50,
-              backgroundColor: "red",
-            })
-            .html("빨강");
-        }
+        $("h1:nth-child(1)").text('<a href="#">text()</a>');
+        $("h1:nth-child(2)").html('<a href="#">html()</a>');
       });
     </script>
     <title>Document</title>
   </head>
   <body>
-    <h1>빨강</h1>
+    <h1>Header - 0</h1>
     <h1>Header - 1</h1>
-    <div></div>
   </body>
 </html>

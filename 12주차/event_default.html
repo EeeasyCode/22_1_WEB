@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //window 에 이 문서가 로드가 다 되고, 그 안에 기능들이 실행될 수 있게 해줌
+      window.onload = () => {
+        var button = document.getElementById("button");
+
+        button.onclick = () => {
+          return false;
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <a id="button" href="www.naver.com">버튼</a>
+  </body>
+</html>
