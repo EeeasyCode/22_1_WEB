@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>문제 2</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+      $(document).ready(() => {
+        firstDiv = document.body.innerText;
+        alert(firstDiv + " 를 두번째 div 에 copy 하겠습니다. ");
+        $("div").text(firstDiv);
+      });
+    </script>
+  </head>
+  <body>
+    <div>첫번째 div 입니다.</div>
+    <div></div>
+  </body>
+</html>

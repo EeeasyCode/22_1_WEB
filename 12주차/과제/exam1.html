@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>문제 1</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("div").css({
+          height: 100,
+          border: "1px solid black",
+          width: (index) => {
+            return 100 + index * 100;
+          },
+          backgroundColor: "red",
+          margin: "20px",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
