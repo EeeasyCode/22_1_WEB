@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#box").css({
+          width: 100,
+          height: 100,
+          background: "aqua",
+          position: "absolute",
+          left: 10,
+          top: 10,
+        });
+        $("#box").click(() => {
+          $("#box")
+            .animate(
+              {
+                width: 300,
+                opacity: 0.5,
+              },
+              2000
+            )
+            .animate(
+              {
+                opacity: 1,
+                left: 500,
+                top: 500,
+              },
+              2000
+            )
+            .animate(
+              {
+                left: 10,
+                top: 500,
+              },
+              2000
+            )
+            .animate(
+              {
+                width: 100,
+                left: 10,
+                top: 10,
+              },
+              2000
+            );
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>

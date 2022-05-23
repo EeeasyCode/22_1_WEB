@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        var clearQueue = false;
+        var goToEnd = false;
+
+        $("#clearQueue").change(() => {
+          clearQueue = $("#clearQueue").prop("checked");
+        });
+        $("#goToEnd").change(() => {
+          goToEnd = $("#goToEnd").prop("checked");
+        });
+        $("#stopButton").click(() => {
+          $("#box").stop(clearQueue, goToEnd);
+        });
+
+        $("#box").css({
+          width: 100,
+          height: 100,
+          background: "red",
+        });
+
+        setInterval(() => {
+          $("#box")
+            .animate(
+              {
+                width: 200,
+              },
+              1000
+            )
+            .delay(1000)
+            .animate(
+              {
+                width: 100,
+                height: 100,
+              },
+              1000
+            );
+        }, 3000);
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <label>clearQueue</label>
+    <input id="clearQueue" type="checkbox" />
+    <br />
+    <label>goToEnd</label>
+    <input id="goToEnd" type="checkbox" />
+    <br />
+    <button id="stopButton">Stop</button>
+    <div id="box"></div>
+  </body>
+</html>
