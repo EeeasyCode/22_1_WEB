@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#box").hover(
+          () => {
+            $("#box").css({
+              borderRadius: 50,
+              background: "blue",
+            });
+          },
+          () => {
+            $("#box").css({
+              borderRadius: 1,
+              background: "red",
+            });
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>

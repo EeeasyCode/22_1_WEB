@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("form").submit((event) => {
+          var value = $("input").val();
+
+          if (value.replace(/[가-힣]/g, "").length == 0) {
+            alert("과정을 진행합니다.");
+          } else {
+            alert("한글 이름을 입력해주세요.");
+            event.preventDefault();
+          }
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>이름</label>
+      <input type="text" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
