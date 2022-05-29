@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="date()">
+      <option>7월 5일 월요일</option>
+      <option>7월 6일 화요일</option>
+      <option>7월 7일 수요일</option>
+      <option>7월 8일 목요일</option>
+    </select>
+    <br />
+    <div>
+      div부분:
+      <div></div>
+    </div>
+  </body>
+  <script>
+    function date() {
+      var div = document.getElementsByTagName("div");
+      var select = document.getElementsByTagName("select");
+    }
+  </script>
+</html>
