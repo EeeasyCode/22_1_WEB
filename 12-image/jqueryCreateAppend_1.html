@@ -5,19 +5,22 @@
     <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
     <script>
       // 이벤트를 연결합니다.
-      $(document).ready(function () {
-        // 10회 반복합니다.
-        for (var i = 0; i < 10; i++) {
-          // 문서 객체를 생성합니다.
-          $("<h1>Create Document Object + " + i + "</h1>")
-            .css({
-              backgroundColor: "aqua",
-              color: "blue",
-            })
-            .appendTo("body");
-        }
-      });
+      // $(document).ready(function () {
+      //   var hi = $("h1").text();
+
+      //   alert(hi);
+      // });
+
+      window.onload = () => {
+        var body = document.querySelectorAll;
+        var hel = body.innerText;
+        alert(hel);
+      };
     </script>
   </head>
-  <body></body>
+  <body>
+    <h1>안녕하세요 이창민입니다</h1>
+    <h1>안녕하세요 이창민입니다</h1>
+    <h2>hello my name is changmin</h2>
+  </body>
 </html>
