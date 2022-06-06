@@ -9,18 +9,15 @@
       $(document).ready(() => {
         var appendDocument = () => {
           for (var i = 0; i < 20; i++) {
-            $("<h1> 무한 스크롤" + i + "</h1>").appendTo("body");
+            $("<h1> 무한 스크롤 " + i + "</h1>").appendTo("body");
           }
         };
-
         appendDocument();
         $(window).scroll(() => {
           var scrollHeight = $(window).scrollTop() + $(window).height();
-          // console.log(scrollHeight);
-          console.log(Math.floor(scrollHeight));
           var documentHeight = $(document).height();
-          console.log(documentHeight);
-          if (Math.floor(scrollHeight + 1) == documentHeight) {
+
+          if (scrollHeight == documentHeight) {
             appendDocument();
           }
         });
