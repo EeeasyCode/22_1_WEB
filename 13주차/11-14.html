@@ -13,15 +13,19 @@
       }
     </style>
     <script>
-      $(document).ready(() => {
-        $("h1").click(() => {
-          alert("Click!");
-          $("h1").addClass("click");
-        });
-      });
+      window.onload = () => {
+        div = document.querySelector("div");
+        var str = div.innerHTML;
+        for (var i = 1; i < 11; i++) {
+          for (var j = 1; j < i + 1; j++) {
+            str += i * "*";
+          }
+          str += "\n";
+        }
+      };
     </script>
   </head>
   <body>
-    <h1>Click Me~</h1>
+    <div></div>
   </body>
 </html>
