@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-      $(document).ready(() => {
-        var appendDocument = () => {
-          for (var i = 0; i < 20; i++) {
-            $("<h1> 무한 스크롤 " + i + "</h1>").appendTo("body");
-          }
-        };
-        appendDocument();
-        $(window).scroll(() => {
-          var scrollHeight = $(window).scrollTop() + $(window).height();
-          var documentHeight = $(document).height();
+      var page = 2;
 
-          if (scrollHeight == documentHeight) {
-            appendDocument();
-          }
-        });
+      $(window).scroll(function () {
+        if (
+          $(window).scrollTop() ==
+          $(document).height() - $(window).height()
+        ) {
+          console.log(++page);
+          $("body").append(
+            '<div class="big-box"><h1>Page ' + page + "</h1></div>"
+          );
+        }
       });
     </script>
+    <style>
+      .big-box {
+        width: 100%;
+        background-color: gray;
+        height: 100vh;
+        border-top: 1px solid black;
+      }
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="big-box"><h1>Page 1</h1></div>
+    <div class="big-box"><h1>Page 2</h1></div>
+  </body>
 </html>
